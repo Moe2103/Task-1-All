@@ -1,0 +1,263 @@
+
+/* Colors used 
+
+background-color (Whitesmoke): #f5f5f5
+ 
+Text Color ( light orange ): #fcba03
+secondary color : #8003fc
+*/
+
+:root {
+  --primary-color: #ffffff;
+  --background-color: #f5f5f5;
+  --secondary-color: #b8b8ff;
+  --button-text-color: #000000;
+  --grid-background-color: #d3d3d3;
+  --fontsize-body: 16px;
+  --fontweight-body: 400;
+  --fontweight-h: 700;
+  --linehight: 2.0;
+}
+
+body {
+  background-color: var(--background-color)
+  Color: var(--primary-color);
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-weight:var(--fontweight-body);
+  font-size: var(--fontsize-body)
+  line-height:var(--linehight);
+  
+}
+
+a:visited {
+  /* visited link */
+  color: var(--button-text-color);
+}
+
+
+a {
+  color: var(--button-text-color);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: var(--secondary-color);
+}
+
+
+button,
+.button1  
+ {
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2 opacity;
+}
+
+
+
+button:hover, 
+button:focus, 
+.button1:hover, 
+.button1:Focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+.button__secondary {
+  background-color: var(--background-color);
+  color: var(--button-text-color);
+}
+
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.table {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: Center;
+}
+
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid {
+  display: grid;
+}
+
+
+.grid__item {
+    background-color: var(--grid-background-color);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+/* this is the same as .cloud-front but written in shorter code */
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
