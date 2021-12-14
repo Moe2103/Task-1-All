@@ -20,14 +20,14 @@ secondary color : #8003fc
 }
 
 body {
-  background-color: var(--background-color)
-  Color: var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
   font-family: 'M PLUS Code Latin', sans-serif;
-  font-weight:var(--fontweight-body);
-  font-size: var(--fontsize-body)
-  line-height:var(--linehight);
-  
+  font-weight: var(--fontweight-body);
+  font-size: var(--fontsize-body);
+  line-height: var(--linehight);
 }
+
 
 a:visited {
   /* visited link */
