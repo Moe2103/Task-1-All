@@ -1,8 +1,8 @@
 
-/* Colors used 
+/* Colors used
 
 background-color (Whitesmoke): #f5f5f5
- 
+
 Text Color ( light orange ): #fcba03
 secondary color : #8003fc
 */
@@ -51,7 +51,7 @@ a:active {
 
 
 button,
-.button1  
+.button1
  {
   border: none;
   font-family: inherit;
@@ -66,9 +66,9 @@ button,
 
 
 
-button:hover, 
-button:focus, 
-.button1:hover, 
+button:hover,
+button:focus,
+.button1:hover,
 .button1:Focus {
   cursor: pointer;
   opacity: 0.8;
