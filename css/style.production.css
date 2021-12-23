@@ -1,32 +1,37 @@
-/* Colors used 
+/* Colors used
 
 background-color (Whitesmoke): #f5f5f5
- 
+
 Text Color ( light orange ): #fcba03
 secondary color : #8003fc
 */
 
 body {
-  background-color: var ;(--background-color)
-  Color: #ffffff;
+  background-color: var;
+  (--background-color)
+  color: #ffff;
   font-family: 'M PLUS Code Latin', sans-serif;
-  font-weight:400;
-  font-size: var;(--fontsize-body)
-  line-height:2.0;
-  
+  font-weight: 400;
+  font-size: var;
+  (--fontsize-body)
+  line-height: 2;
+}
+
+.Let {
+  text-align: center;
 }
 
 a:visited {
   /* visited link */
-  color: #000000;
+  color: #0000;
 }
-
 
 a {
-  color: #000000;
+  color: #000;
 }
 
-a:hover, a:focus {
+a:hover,
+a :focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -36,58 +41,14 @@ a:active {
   color: #b8b8ff;
 }
 
-
-button  
- {
-  border: none;
-  font-family: inherit;
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2 opacity;
-  transition: 0.2 opacity;
-}
-
-
-.button1  
- {
-  border: none;
-  font-family: inherit;
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2 opacity;
-  transition: 0.2 opacity;
-}
-
-
-
-button:hover, 
-button:focus, 
-.button1:hover, 
-.button1:Focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-
-
-.button__secondary {
-  background-color: #f5f5f5;
-  color: #000000;
+.table {
+  text-align: center;
 }
 
 .about {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .table {
@@ -96,15 +57,12 @@ button:focus,
   text-align: center;
 }
 
-
 .profile__portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
-
-
 
 .profile {
   max-width: 700px;
@@ -113,21 +71,20 @@ button:focus,
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: Center;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: Center;
 }
-
 
 .page-header {
   display: -webkit-box;
@@ -139,14 +96,14 @@ button:focus,
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -163,19 +120,22 @@ button:focus,
   margin-left: 15px;
 }
 
+.contact-field {
+  text-align: center;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
 }
 
-
 .grid__item {
-    background-color: #d3d3d3;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 20px;
-  }
+  background-color: #d3d3d3;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 20px;
+}
 
 .grid {
   display: -ms-grid;
@@ -216,29 +176,25 @@ button:focus,
   -ms-grid-column: 3;
 }
 
-
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding: 20px;
 }
-
 
 .grid__item:last-child {
   -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
   -ms-grid-column-span: 0;
   grid-column-end: 3;
   -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   -ms-grid-row-span: 2;
   grid-row-end: 3;
 }
-
-
-
 
 @media all and (max-width: 500px) {
   .grid {
@@ -246,48 +202,52 @@ button:focus,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
-
-
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
 }
 
-
-
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -295,76 +255,84 @@ button:focus,
 
 .sun {
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-name: color-change;
-          animation-name: color-change;
+  animation-name: color-change;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation-duration: 30s;
-          animation-duration: 30s;
+  animation-duration: 30s;
   -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
+  animation-name: cloud-move;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
-  to {
+
+t {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 /* this is the same as .cloud-front but written in shorter code */
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.Contact1 {
+  text-align: center;
 }
