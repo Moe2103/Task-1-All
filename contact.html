@@ -49,24 +49,45 @@
 
         <br><br><br><br>
 
-        <form action="Send" method="post" id="contact-form" class="contact-field">
-            <label class="standard-label" for="Name">Name:</label>
-            <input type="text" Id="Name" required>
-            <br>
+        <div class="container">
+	<div class="row">
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">I would love to hear from you !</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
 
-            <label class="standard-label" for="E-Mail">E-mail: </label>
-            <input type="email" id="E-Mail" required>
-            <br>
-            <label class="standard-label" for="Telephone">Telephone: </label>
-            <input type="tel" id="Telephone" required>
-            <br>
-            <label class="standard-label" for="Message">Message: </label>
-            <textarea maxlength= "250" Id="Message" required>  </textarea>
-
-
-            <input type="submit" value="Send message">
-        </form>
     </main>
+
     <br><br><br>
 <footer class="page-footer">
         <p>Catch me up</p>
